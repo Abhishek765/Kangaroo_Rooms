@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "17772218357",
+    "firebase_url": "https://kangaroo-rooms-c6f57.firebaseio.com",
+    "project_id": "kangaroo-rooms-c6f57",
+    "storage_bucket": "kangaroo-rooms-c6f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17772218357:android:61deadf6b96d0f50",
+        "android_client_info": {
+          "package_name": "com.example.kangaroo_rooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17772218357-3cc7epun6btd10noi6qpo3cmps9kp9is.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kangaroo_rooms",
+            "certificate_hash": "def38bb67272f5bda4052385394a19e9c44714c3"
+          }
+        },
+        {
+          "client_id": "17772218357-uutg2of6o5at8bdm91ni7m92t82rsmie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpD0bkgHuWV94MChDgqlp8nOcI8-3pA9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17772218357-uutg2of6o5at8bdm91ni7m92t82rsmie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,16 @@
 package com.example.kangaroo_rooms;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
@@ -14,6 +18,21 @@ import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
 public class MainActivity extends AwesomeSplash {
+    boolean isConnected;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        ConnectivityManager cm =
+                (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        isConnected = activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
+
+    }
+
+
     @Override
     public void initSplash(ConfigSplash configSplash) {
         //hide the actionBar
@@ -43,7 +62,14 @@ public class MainActivity extends AwesomeSplash {
 
     @Override
     public void animationsFinished() {
-        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        if (isConnected){
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+
+        }
+        else{
+            //internet connection is not there
+            Toast.makeText(this, "No internet connection.Please check your network and try again", Toast.LENGTH_SHORT).show();
+        }
     }
 
 //    Handler handler;

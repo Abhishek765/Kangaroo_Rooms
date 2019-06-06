@@ -7,14 +7,14 @@
     android:fillViewport="false"
     android:orientation="vertical"
     android:background="#13758F"
-    tools:context=".SignUpActivity">
+    tools:context=".Activities.SignUpActivity">
 
     <LinearLayout
         android:id="@+id/first_run_third_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#2198F3"
+        android:background="#A3B1B9"
         android:gravity="center_horizontal">
 
         <android.support.v7.widget.Toolbar

@@ -1,11 +1,10 @@
-package com.example.kangaroo_rooms;
+package com.example.kangaroo_rooms.Activities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -21,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.kangaroo_rooms.R;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

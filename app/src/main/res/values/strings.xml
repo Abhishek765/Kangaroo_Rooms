@@ -8,4 +8,7 @@
         messages?</string>
     <string name="deny_sms">To auto detect OTP,please provide\n
         permission to read SMS. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

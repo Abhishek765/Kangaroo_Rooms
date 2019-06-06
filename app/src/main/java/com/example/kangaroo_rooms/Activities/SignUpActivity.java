@@ -1,4 +1,4 @@
-package com.example.kangaroo_rooms;
+package com.example.kangaroo_rooms.Activities;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -30,6 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.kangaroo_rooms.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;

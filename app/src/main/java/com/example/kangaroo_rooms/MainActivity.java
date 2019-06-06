@@ -23,21 +23,25 @@ public class MainActivity extends AwesomeSplash {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         ConnectivityManager cm =
                 (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-        isConnected = activeNetwork != null &&
+        isConnected = activeNetwork !=   null &&
                 activeNetwork.isConnectedOrConnecting();
 
     }
 
 
+
+
+
     @Override
     public void initSplash(ConfigSplash configSplash) {
         //hide the actionBar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
         //Setting Fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //Background Animation

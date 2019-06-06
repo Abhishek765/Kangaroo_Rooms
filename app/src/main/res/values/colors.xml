@@ -6,5 +6,11 @@
 
     <color name="bg_color">#03A9F4</color>
     <color name="txt_color">#02050F</color>
+    <color name="errorSnackBarColor">#F48FB1</color>
+    <color name="endColor">#E53935</color>
+    <color name="allow_deny_alert">#c2fc06</color>
+    <color name="half_white">#FAFAFA</color>
+    <color name="shade_red1">#E53935</color>
+    <color name="deny_alert_bakground">#DD000000</color>
 
 </resources>

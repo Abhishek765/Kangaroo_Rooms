@@ -58,7 +58,6 @@ public class VerifyPhone extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        //Intent intent1 = getIntent();
         countryCodeMobileNumber = intent.getStringExtra("countryCodeMobNumber");
         phoneVerifyId = intent.getStringExtra("verificationIdSent");
         resendToken =  intent.getStringExtra("reSendToken");

@@ -1,5 +1,6 @@
 package com.example.kangaroo_rooms.Activities;
 
+import android.app.Activity;
 import android.app.Fragment;
 
 import android.app.FragmentTransaction;
@@ -127,17 +128,22 @@ public class FirstActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        if(!((HomeFragment.newInstance()).getClass().equals(selectedFragment.getClass())) ) {
+    @Override
+    public void onBackPressed() {
+//        if(!((HomeFragment.newInstance()).getClass().equals(viewPager.getCurrentItem())) ) {
 //            View view = FirstActivity.bottomNavigationView.findViewById(R.id.home_menu_item);
 //            view.performClick();
 //        }
-//        else {
+//       else {
 //
-//            finish();
 //
 //        }
-//
-//    }
+        if (viewPager.getCurrentItem() != 0) {
+            viewPager.setCurrentItem(0);
+        }else{
+            finish();
+        }
+
+
+    }
 }

@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
     int ref;
     DatabaseReference reference;
     boolean isPhoneNumberVerified, verificationByCode, instantVerification;
-    static String userName;
+    public static String userName;
     static String userUid;
     static String phone;
 

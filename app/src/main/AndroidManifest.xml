@@ -12,14 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.FirstActivity"
-                  android:label=" "/>
+                  android:label=" "
+            android:screenOrientation="portrait"/>
         <activity android:name=".Activities.VerifyPhone"
-            android:label=" " />
+            android:label=" "
+            android:screenOrientation="portrait"/>
         <activity android:name=".Activities.SignUpActivity"
-            android:label=" "/>
+            android:label=" "
+            android:screenOrientation="portrait"/>
         <activity android:name=".Activities.LoginActivity"
-            android:label=" "/>
-        <activity android:name=".Activities.MainActivity">
+            android:label=" "
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

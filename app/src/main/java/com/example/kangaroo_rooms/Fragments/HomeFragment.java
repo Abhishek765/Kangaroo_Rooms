@@ -34,11 +34,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class HomeFragment extends Fragment {
 
-    Calendar c;
-    int timeOfDay   ;
-    String name;
-    String welcomeMessage;
-    Typeface custom_font;
+//
     private RecyclerView mRecyclerView;
     private NewAdapter mAdapter;
     private TextView mOyoTextView;
@@ -66,22 +62,9 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_home, container, false);
-        c = Calendar.getInstance();
-        timeOfDay = c.get(Calendar.HOUR_OF_DAY);
-        name =  this.getActivity().getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getString("name", null);
 
-        custom_font = Typeface.createFromAsset(this.getActivity().getAssets(), "fonts/Pacifico.ttf");
+        //
 
-        if(timeOfDay >= 0 && timeOfDay < 12){
-            welcomeMessage = "Good Morning";
-        }else if(timeOfDay >= 12 && timeOfDay < 16){
-            welcomeMessage = "Good Afternoon";
-        }else if(timeOfDay >= 16 && timeOfDay < 21){
-            welcomeMessage = "Good Evening";
-        }else if(timeOfDay >= 21 && timeOfDay < 24){
-            welcomeMessage = "Good Night";
-        }
 
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
         toolbar.setPadding(0, 0, 0, 0);

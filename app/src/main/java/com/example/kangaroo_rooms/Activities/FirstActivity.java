@@ -54,35 +54,9 @@ public class FirstActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                        selectedFragment = HomeFragment.newInstance();
-                        switch (item.getItemId()) {
-                            case R.id.home_menu_item:
-//                                selectedFragment = HomeFragment.newInstance();
-                                viewPager.setCurrentItem(0);
-                                break;
-                            case R.id.saved_hotel_menu_item:
-//                                selectedFragment = SavedHotelFragment.newInstance();
-                                viewPager.setCurrentItem(1);
-                                break;
-                            case R.id.bookings_menu_item:
-//                                selectedFragment = BookingsFragment.newInstance();
-                                viewPager.setCurrentItem(2);
-                                break;
-                            case R.id.you_menu_item:
-//                                selectedFragment = YourFragment.newInstance();
-                                viewPager.setCurrentItem(3);
-                                break;
-                        }
-//                        myFragment = (Fragment) getFragmentManager().findFragmentByTag("CURRENT_FRAGMENT");
-//                        if(!(myFragment.getClass().equals(selectedFragment.getClass())) ) {
-//                            FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//                            transaction.replace(R.id.frame_layout, selectedFragment, "CURRENT_FRAGMENT");
-//                            transaction.commit();
-//                        }
-                        return false;
-                    }
+                   //add functionality for bottomnavigation
+
+
                 });
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
